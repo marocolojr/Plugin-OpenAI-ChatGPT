@@ -1,0 +1,55 @@
+{
+    "calls": {
+        "AAD": {
+            "body": "{\n    \"model\": \"text-davinci-003\",\n    \"prompt\": \"<prompt>\",\n    \"max_tokens\": <max_tokens>,\n    \"temperature\": <temperature>\n}",
+            "body_params": {
+                "AAH": {
+                    "doc": "text",
+                    "key": "prompt",
+                    "private": true,
+                    "value": "Your text"
+                },
+                "AAI": {
+                    "doc": "The token count of your prompt plus max_tokens cannot exceed the model's context length. Most models have a context length of 2048",
+                    "key": "max_tokens",
+                    "private": true,
+                    "value": "2048"
+                },
+                "AAJ": {
+                    "doc": "What sampling temperature to use. Higher values means the model will take more risks. Try 0.9 for more creative applications, and 0 (argmax sampling) for ones with a well-defined answer.",
+                    "key": "temperature",
+                    "private": true,
+                    "value": "0.9"
+                }
+            },
+            "doc_link": "https://beta.openai.com/docs/api-reference/completions/create",
+            "headers": {
+                "AAF": {
+                    "doc": "Authorization: Bearer YOUR_API_KEY\n\nEx:\n\nBearer sk-jJ9hzShoWoU1Uq7dy0kN....\n\n\nhttps://beta.openai.com/account/api-keys.",
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer sk-jJ9hzShoWoU1Uq7dy0kNT3BlbkFJ1k....."
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Text ChatGPT",
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1675048946569x299554634400530400.plugin_api.AAD",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAD\":{\"caption\":\"Text ChatGPT\",\"fields\":{\"_p_body.id\":{\"ret_value\":\"text\",\"caption\":\"body id\",\"sample_value\":\"cmpl-6eFmUyK9f74tTvZYv1TFNBrrPhsdm\",\"path\":[\"body\",\"id\"]},\"_p_body.object\":{\"ret_value\":\"text\",\"caption\":\"body object\",\"sample_value\":\"text_completion\",\"path\":[\"body\",\"object\"]},\"_p_body.created\":{\"ret_value\":\"number\",\"caption\":\"body created\",\"sample_value\":1675051802,\"path\":[\"body\",\"created\"]},\"_p_body.model\":{\"ret_value\":\"text\",\"caption\":\"body model\",\"sample_value\":\"text-davinci-003\",\"path\":[\"body\",\"model\"]},\"_p_body.choices\":{\"ret_value\":\"list.api.1675048946569x299554634400530400.plugin_api.AAD.body.choices\",\"caption\":\"body choices\",\"path\":[\"body\",\"choices\"]},\"_p_body.usage.prompt_tokens\":{\"ret_value\":\"number\",\"caption\":\"body usage prompt_tokens\",\"sample_value\":13,\"path\":[\"body\",\"usage\",\"prompt_tokens\"]},\"_p_body.usage.completion_tokens\":{\"ret_value\":\"number\",\"caption\":\"body usage completion_tokens\",\"sample_value\":349,\"path\":[\"body\",\"usage\",\"completion_tokens\"]},\"_p_body.usage.total_tokens\":{\"ret_value\":\"number\",\"caption\":\"body usage total_tokens\",\"sample_value\":362,\"path\":[\"body\",\"usage\",\"total_tokens\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"id\\\\\\\":\\\\\\\"cmpl-6eFmUyK9f74tTvZYv1TFNBrrPhsdm\\\\\\\",\\\\\\\"object\\\\\\\":\\\\\\\"text_completion\\\\\\\",\\\\\\\"created\\\\\\\":1675051802,\\\\\\\"model\\\\\\\":\\\\\\\"text-davinci-003\\\\\\\",\\\\\\\"choices\\\\\\\":[{\\\\\\\"text\\\\\\\":\\\\\\\"\\\\\\\\n\\\\\\\\nVocê está procurando um imóvel para comprar? Então não procure mais! Aqui na nossa imobiliária temos uma variedade de excelentes imóveis para lhe oferecer.\\\\\\\\n\\\\\\\\nAqui você encontra uma seleção de casas e apartamentos novos e usados. Nossa equipe conhece todos os imóveis disponíveis e está pronta para ajudá-lo a encontrar o imóvel ideal para você. Temos imóveis em todos os tamanhos, estilos, faixas de preço e localizações - tudo para atender às suas necessidades.\\\\\\\\n\\\\\\\\nAlém disso, nosso objetivo é lhe oferecer uma experiência de compra de imóvel agradável e livre de estresse. Nossa equipe trabalha duro para garantir que você obtenha o melhor serviço possível, desde a escolha de uma propriedade até a conclusão da compra.\\\\\\\\n\\\\\\\\nSe você está pronto para encontrar o imóvel dos seus sonhos, visite nossa imobiliária hoje mesmo. Não perca mais tempo - temos uma seleção incrível de imóveis esperando por você!\\\\\\\",\\\\\\\"index\\\\\\\":0,\\\\\\\"logprobs\\\\\\\":null,\\\\\\\"finish_reason\\\\\\\":\\\\\\\"stop\\\\\\\"}],\\\\\\\"usage\\\\\\\":{\\\\\\\"prompt_tokens\\\\\\\":13,\\\\\\\"completion_tokens\\\\\\\":349,\\\\\\\"total_tokens\\\\\\\":362}}\\\\n\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}},\"plugin_api.AAD.body.choices\":{\"caption\":\"Text ChatGPT body choice\",\"fields\":{\"_p_text\":{\"ret_value\":\"text\",\"caption\":\"text\",\"sample_value\":\"\\n\\nVocê está procurando um imóvel para comprar? Então não procure mais! Aqui na nossa imobiliária temos uma variedade de excelentes imóveis para lhe oferecer.\\n\\nAqui você encontra uma seleção de casas e apartamentos novos e usados. Nossa equipe conhece todos os imóveis disponíveis e está pronta para ajudá-lo a encontrar o imóvel ideal para você. Temos imóveis em todos os tamanhos, estilos, faixas de preço e localizações - tudo para atender às suas necessidades.\\n\\nAlém disso, nosso objetivo é lhe oferecer uma experiência de compra de imóvel agradável e livre de estresse. Nossa equipe trabalha duro para garantir que você obtenha o melhor serviço possível, desde a escolha de uma propriedade até a conclusão da compra.\\n\\nSe você está pronto para encontrar o imóvel dos seus sonhos, visite nossa imobiliária hoje mesmo. Não perca mais tempo - temos uma seleção incrível de imóveis esperando por você!\",\"path\":[\"text\"]},\"_p_index\":{\"ret_value\":\"number\",\"caption\":\"index\",\"sample_value\":0,\"path\":[\"index\"]},\"_p_logprobs\":{\"ret_value\":\"text\",\"caption\":\"logprobs\",\"sample_value\":null,\"path\":[\"logprobs\"]},\"_p_finish_reason\":{\"ret_value\":\"text\",\"caption\":\"finish_reason\",\"sample_value\":\"stop\",\"path\":[\"finish_reason\"]}}}}",
+            "url": "https://api.openai.com/v1/completions",
+            "wrap_error": true
+        }
+    },
+    "human": "ChatGPT",
+    "shared_headers": {
+        "AAC": {
+            "key": "Content-Type",
+            "private": true,
+            "value": "application/json",
+            "visibility": "hidden"
+        }
+    }
+}

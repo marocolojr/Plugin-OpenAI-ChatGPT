@@ -1,0 +1,11 @@
+{
+    "categories": {
+        "0": "productivity"
+    },
+    "description": "API ChapGPT\n\nDocumentation\n\nhttps://beta.openai.com/docs/api-reference/introduction\n\nPOST and Request body\n\nhttps://beta.openai.com/docs/api-reference/completions",
+    "image": "//s3.amazonaws.com/appforest_uf/f1675050015185x583119885233089900/Overview%20-%20OpenAI%20API-0.svg",
+    "license": "open_source",
+    "link": "https://beta.openai.com/docs/api-reference/completions/create",
+    "name": "OpenAI ChatGPT",
+    "plugin_instructions": "Step 1: Created API Key\n\nhttps://beta.openai.com/account/api-keys\n\nStep 2: Insert API Key (Headers Authorization)\n\nBearer YOUR_API_KEY\n\nStep3: Insert your text in prompt\n\nResult: Body Choice text\n\n"
+}
